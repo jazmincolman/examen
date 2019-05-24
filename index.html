@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Recordatorios</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Recordatorios</h1>
+        <p>
+            <label for="new-task">Nueva Recordatorio</label>
+            <input id="new-task" type="text">
+			<label for="fecha">Fecha</label>
+            <input id="fecha" type="date"><button class="add">Agregar</button>
+        </p>
+
+        <h2>Lista de Recordatorios </h2>
+        <ul id="incomplete-tasks">
+            <li>
+                <label>
+                    <input type="checkbox"/>
+                    Recordar 1
+                </label>
+                <button class="edit">Editar</button>
+                <button class="delete">Borrar</button>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox"/>
+                    Recordar 2
+                </label>
+                <button class="edit">Editar</button>
+                <button class="delete">Borrar</button></li>
+
+        </ul>
+
+        <h2>Lista de Tareas Pasadas</h2>
+        <ul id="completed-tasks">
+            <li>
+                <label>
+                    <input type="checkbox" checked>
+                    Tarea 0
+                </label>
+                <button class="edit">Editar</button>
+                <button class="delete">Borrar</button>
+            </li>
+        </ul>
+    </div>
+	<script type="text/javascript" src="js/ajax.js" async></script>
+        <script type="text/javascript" src="js/recordatorio.js" async></script>
+</body>
+</html>
